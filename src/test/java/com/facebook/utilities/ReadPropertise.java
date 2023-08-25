@@ -14,28 +14,29 @@ public class ReadPropertise {
 			FileInputStream fis = new FileInputStream("src/test/resources/test.properties");
 			propertise.load(fis);
 		} catch (IOException e) {
-			e.printStackTrace();
+	        System.out.println("Error loading properties file: " + e.getMessage());
 		}
 	}
 
 	public String getBrowser() {
-		return (String) propertise.get("browser");
+		return propertise.getProperty("browser");
+		
 	}
 
 	public String getUrl() {
-		return (String) propertise.get("qaUrl");
+		 return propertise.getProperty("qaUrl");
 	}
 
 	public String getUserName() {
-		return (String) propertise.get("userName");
+	return propertise.getProperty("userName");
 	}
 
 	public String getPassword() {
-		return (String) propertise.get("password");
+		return propertise.getProperty("password");
 	}
 
 	public static void main(String[] args) {
 		ReadPropertise rp = new ReadPropertise();
-		System.out.println(rp.getUrl());
+		System.out.println(rp.getBrowser());
 	}
 }
