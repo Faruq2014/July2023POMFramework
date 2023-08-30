@@ -54,17 +54,17 @@ public class RegistrationPage {
 	}
 	
 	@FindBy(how=How.ID, using="month") private WebElement bitrthMonth;
-	public WebElement monthDropDownField(int enterYourBirthMonth) {
+	public WebElement monthDropDownField(String enterYourBirthMonth) {
 		Select select = new Select(bitrthMonth);
-		select.selectByIndex(enterYourBirthMonth);
+		select.selectByVisibleText(enterYourBirthMonth);
 		return bitrthMonth;
 		
 	}
 	
 	@FindBy(how=How.ID, using="day") private WebElement bitrthDay;
-	public WebElement dayDropDownField(int enterYourBirthDay) {
+	public WebElement dayDropDownField(String enterYourBirthDay) {
 		Select select = new Select(bitrthDay);
-		select.selectByIndex(enterYourBirthDay);
+		select.deselectByVisibleText(enterYourBirthDay);
 		return bitrthDay;
 		
 	}
