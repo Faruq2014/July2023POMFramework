@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.facebook.registrationTests.RegistrationTestWithExcelData">
+      <class name="com.facebook.registrationTests.RegistrationTest">
         <methods>
           <include name="signUpTestForRahul"/>
+          <include name="signUpTestForIsrak"/>
           <include name="closeApplication"/>
           <include name="openApplication"/>
         </methods>
-      </class> <!-- com.facebook.registrationTests.RegistrationTestWithExcelData -->
+      </class> <!-- com.facebook.registrationTests.RegistrationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
