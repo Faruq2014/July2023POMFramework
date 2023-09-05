@@ -64,7 +64,7 @@ public class RegistrationPage {
 	@FindBy(how=How.ID, using="day") private WebElement bitrthDay;
 	public WebElement dayDropDownField(String enterYourBirthDay) {
 		Select select = new Select(bitrthDay);
-		select.deselectByVisibleText(enterYourBirthDay);
+		select.selectByVisibleText(enterYourBirthDay);
 		return bitrthDay;
 		
 	}

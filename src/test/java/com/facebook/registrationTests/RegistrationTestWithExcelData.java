@@ -21,19 +21,20 @@ public class RegistrationTestWithExcelData extends BaseTest{
 		String pass = re.getStringData(1, 4);
 		String month = re.getStringData(1, 5);
 		String day = re.getStringData(1, 6);
+		String year = re.getStringData(1, 7);
 		rp= new RegistrationPage(driver);
 		rp.createNewAccount();
 		rp.firstNameField(fName);
 		rp.lastNameField(lName);
 		rp.emailField(email);
 		rp.passwordField(pass);
-		rp.monthDropDownField(month);
+		//rp.monthDropDownField(month);
 		rp.dayDropDownField(day);
-		rp.yearDropDownField("1982");
+		rp.yearDropDownField(year);
 		rp.radioButton("male");
 	}
 	
-	//@Test(priority=2, groups="regression")
+	@Test(priority=2, groups="regression")
 	public void signUpTestForIsrak() {
 		rp= new RegistrationPage(driver);
 		rp.createNewAccount();
@@ -41,7 +42,7 @@ public class RegistrationTestWithExcelData extends BaseTest{
 		rp.lastNameField("Molla");
 		rp.emailField("rm@ymail.com");
 		rp.passwordField("hjkjk");
-		rp.monthDropDownField("Aug");
+		rp.monthDropDownField("Jan");
 		rp.dayDropDownField("22");
 		rp.yearDropDownField("1982");
 		rp.radioButton("male");

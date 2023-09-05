@@ -1,68 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-29T20:18:44 EDT" name="Default suite" finished-at="2023-08-29T20:18:48 EDT" duration-ms="4478">
+  <suite started-at="2023-09-04T20:36:48 EDT" name="Default suite" finished-at="2023-09-04T20:36:55 EDT" duration-ms="7105">
     <groups>
+      <group name="regression">
+        <method signature="RegistrationTest.signUpTestForIsrak()[pri:2, instance:com.facebook.registrationTests.RegistrationTest@3349e9bb]" name="signUpTestForIsrak" class="com.facebook.registrationTests.RegistrationTest"/>
+      </group> <!-- regression -->
       <group name="smoke">
-        <method signature="RegistrationTestWithExcelData.signUpTestForRahul()[pri:1, instance:com.facebook.registrationTests.RegistrationTestWithExcelData@158d2680]" name="signUpTestForRahul" class="com.facebook.registrationTests.RegistrationTestWithExcelData"/>
+        <method signature="RegistrationTest.signUpTestForRahul()[pri:1, instance:com.facebook.registrationTests.RegistrationTest@3349e9bb]" name="signUpTestForRahul" class="com.facebook.registrationTests.RegistrationTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-08-29T20:18:44 EDT" name="Default test" finished-at="2023-08-29T20:18:48 EDT" duration-ms="4478">
-      <class name="com.facebook.registrationTests.RegistrationTestWithExcelData">
-        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.facebook.registrationTests.RegistrationTestWithExcelData@158d2680]" started-at="2023-08-29T20:18:44 EDT" name="openApplication" finished-at="2023-08-29T20:18:46 EDT" duration-ms="2627" status="PASS">
+    <test started-at="2023-09-04T20:36:48 EDT" name="Default test" finished-at="2023-09-04T20:36:55 EDT" duration-ms="7105">
+      <class name="com.facebook.registrationTests.RegistrationTest">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.facebook.registrationTests.RegistrationTest@3349e9bb]" started-at="2023-09-04T20:36:48 EDT" name="openApplication" finished-at="2023-09-04T20:36:50 EDT" duration-ms="2678" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method signature="signUpTestForRahul()[pri:1, instance:com.facebook.registrationTests.RegistrationTestWithExcelData@158d2680]" started-at="2023-08-29T20:18:46 EDT" name="signUpTestForRahul" finished-at="2023-08-29T20:18:48 EDT" duration-ms="1603" status="FAIL">
-          <exception class="java.lang.UnsupportedOperationException">
-            <message>
-              <![CDATA[You may only deselect options of a multi-select]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.UnsupportedOperationException: You may only deselect options of a multi-select
-at org.openqa.selenium.support.ui.Select.deselectByVisibleText(Select.java:270)
-at com.facebook.registrationPages.RegistrationPage.dayDropDownField(RegistrationPage.java:67)
-at com.facebook.registrationTests.RegistrationTestWithExcelData.signUpTestForRahul(RegistrationTestWithExcelData.java:31)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.UnsupportedOperationException -->
+        <test-method signature="signUpTestForRahul()[pri:1, instance:com.facebook.registrationTests.RegistrationTest@3349e9bb]" started-at="2023-09-04T20:36:50 EDT" name="signUpTestForRahul" finished-at="2023-09-04T20:36:52 EDT" duration-ms="1221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpTestForRahul -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.facebook.registrationTests.RegistrationTestWithExcelData@158d2680]" started-at="2023-08-29T20:18:48 EDT" name="closeApplication" finished-at="2023-08-29T20:18:48 EDT" duration-ms="215" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.facebook.registrationTests.RegistrationTest@3349e9bb]" started-at="2023-09-04T20:36:52 EDT" name="closeApplication" finished-at="2023-09-04T20:36:52 EDT" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- com.facebook.registrationTests.RegistrationTestWithExcelData -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.facebook.registrationTests.RegistrationTest@3349e9bb]" started-at="2023-09-04T20:36:52 EDT" name="openApplication" finished-at="2023-09-04T20:36:54 EDT" duration-ms="1773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="signUpTestForIsrak()[pri:2, instance:com.facebook.registrationTests.RegistrationTest@3349e9bb]" started-at="2023-09-04T20:36:54 EDT" name="signUpTestForIsrak" finished-at="2023-09-04T20:36:55 EDT" duration-ms="1004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpTestForIsrak -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.facebook.registrationTests.RegistrationTest@3349e9bb]" started-at="2023-09-04T20:36:55 EDT" name="closeApplication" finished-at="2023-09-04T20:36:55 EDT" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.facebook.registrationTests.RegistrationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

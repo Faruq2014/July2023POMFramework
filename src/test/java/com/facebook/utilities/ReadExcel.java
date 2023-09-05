@@ -117,15 +117,21 @@ public class ReadExcel {
 		System.out.println(lName);
 		String fima = re.getStringData(1, 1);
 		System.out.println(fima);
-		double data=re.getNumericCellData(1, 8);
-		System.out.println(data);
+		//double data=re.getNumericCellData(1, 8);
+		//System.out.println(data);
 		
+		String day = re.getStringData(1, 6);
+		System.out.println("Day is...."+day);
+		
+		String year = re.getStringData(1, 7);
+		System.out.println("year is...."+year);
+	
 		//String fileLocation = "src/test/resources/registration.xlsx";
 		String sheet3 = "Sheet3";
 		ReadExcel numericSheet = new ReadExcel(fileLocation, sheet3);
 		System.out.println(numericSheet.getNumericCellData(1, 0));
 		System.out.println(numericSheet.getNumericCellData(1, 1));
-
+		
 	}
 
 }
