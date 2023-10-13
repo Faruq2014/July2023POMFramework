@@ -2,6 +2,7 @@ package com.facebook.loginTests;
 
 import java.util.Properties;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.facebook.base.BaseTest;
@@ -36,6 +37,8 @@ public class LoginTest extends BaseTest{
 		lp.userName("Asma");
 		lp.enterPassword("asma123");
 		lp.clickLoginButton();
+		Assert.assertEquals("hello", driver.getTitle());
+		screenShot("Asma");
 	}
 	
 
